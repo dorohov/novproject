@@ -1,54 +1,18 @@
 {
-    "sitename": "Ярус",
-    "phone": "+7 (4862) 50-85-35",
-    "phone_link": "84862508535",
-    "email": "da@yarus57.ru",
-    "menu": [
+    "sitename": "Новпроект",
+    "phone": "+7 (4862) 78-11-91 ",
+    "phone_link": "84862781191",
+    "phone_f": "+7 910 262 32 32",
+    "phone_f_link": "89102623232",
+    "email": "info@novproect.ru",
+    "pages": [
         {
-            "title": "Ремонтные работы",
-            "url": "@@pages.our_work"
-        },
-        {
-            "title": "Дизайн интерьера",
-            "url": "@@pages.our_work_design"
-        },
-        {
-            "title": "Портфолио",
-            "url": "@@pages.portfolio"
-        },
-        {
-            "title": "О компании",
-            "url": "@@pages.about"
-        },
-        {
-            "title": "Блог",
-            "url": "@@pages.blog"
-        },
-        {
-            "title": "Контакты",
-            "url": "@@pages.contacts"
+            "index": "index.html"
         }
     ],
-    "pages": {
-        "index": "index.html",
-        "our_work": "our_work.html",
-        "our_work_design": "our_work_design.html",
-        "builder": "builder.html",
-        "design": "design.html",
-        "work_process": "work_process.html",
-        "work_complete": "work_complete.html",
-        "portfolio": "portfolio.html",
-        "about": "about.html",
-        "blog": "blog.html",
-        "article": "article.html",
-        "contacts": "contacts.html",
-        "reviews": "reviews.html",
-        "review": "review.html",
-        "working_process": "working_process.html"
-    },
     "social": {
-        "vk": "https://vk.com/yarus57",
-        "instagram": "https://www.instagram.com/remont_yarus/",
-        "facebook": "https://www.facebook.com/yarus57/"
+        "vk": "#",
+        "instagram": "#",
+        "youtube": "#"
     }
 }
