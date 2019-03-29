@@ -1,0 +1,115 @@
+.carousel {
+    position: relative;
+    &__block {
+        &__bg {
+            position: relative;
+            z-index: 50;
+        }
+        &__inner {
+            position: relative;
+        }
+        &__content {
+            @extend .container;
+            position: absolute;
+            z-index: 100;
+            bottom: 30%;
+            left: 0;
+            right: 0;
+            margin: 0 auto; 
+        }
+        &__title {
+            @include borderedText();
+            font-size: 36px;
+            line-height: 44px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-family: 'Roboto Slab';
+        }
+        &__subtitle {
+            @include borderedText();
+            line-height: 28px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 27%;
+        max-width: 400px;
+        padding: 0 30px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            padding: 0 15px;
+            button {
+                width: 17px;
+                height: 17px;
+                box-sizing: border-box;
+                overflow: hidden;
+                color: transparent;
+                background: transparent;
+                border: 1px solid transparent;
+                border-radius: 100%;
+                outline: none;
+                cursor: pointer;
+                position: relative;
+                transition: .25s all ease;
+                &::after {
+                    width: 7px;
+                    height: 7px;
+                    content: '';
+                    background: #fff;
+                    position: absolute;
+                    left: 4px;
+                    top: 4px;
+                    border-radius: 100%;
+                }
+            }
+            &.slick-active {
+                button {
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1560px) {
+    .carousel {
+        &__block {
+            &__content {
+                bottom: 50%;
+            }
+        }
+        .slick-dots {
+            bottom: 42%;
+        }
+    }
+}
+
+@media (max-width: $resp1200) {
+    .carousel {
+        &__block {
+            &__content {
+                bottom: 20%;
+            }
+        }
+        .slick-dots {
+            bottom: 10%;
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .carousel {
+        &__block {
+            &__content {
+                display: none;
+            }
+        }
+    }
+}

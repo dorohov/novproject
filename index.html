@@ -13,7 +13,7 @@
     <header class="navbar">
         <div class="navbar__inner">
             <div class="navbar__logo">
-                <a href="nullindex">
+                <a href="@@pages.index">
                     <img src="img/svg/logo.svg" alt="">
                 </a>
             </div>
@@ -22,7 +22,7 @@
             </div>
             <div class="navbar__menu">
                 <ul>
-                    <li><a href="#">Проекты</a></li>
+                    <li class="is--active"><a href="#">Проекты</a></li>
                     <li><a href="#">Услуги и цены</a></li>
                     <li><a href="#">О компании</a></li>
                     <li><a href="#">Контакты</a></li>
@@ -32,7 +32,7 @@
                 <a href="tel:84862781191">+7 (4862) 78-11-91 </a>
             </div>
             <div class="navbar__mobile">
-                <button class="hamburger hamburger--collapse" type="button">
+                <button class="hamburger hamburger--collapse" id="mobile_menu" type="button">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>
@@ -42,16 +42,162 @@
     </header>
     <div class="mobile__menu">
         <div class="mobile__menu__inner">
-
+            <div class="mobile__menu__list">
+                <ul>
+                    <li class="is--active"><a href="#">Проекты</a></li>
+                    <li><a href="#">Услуги и цены</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="mobile__menu__phone">
+                <a href="tel:84862781191">+7 (4862) 78-11-91 </a>
+            </div>
         </div>
     </div>
     <main>
-        Hello
+        <div class="carousel">
+            <div class="carousel__list">
+                <div class="carousel__block">
+                    <div class="carousel__block__inner">
+                        <div class="carousel__block__bg">
+                            <img src="img/banner1.jpg" alt="">
+                        </div>
+                        <div class="carousel__block__content">
+                            <div class="carousel__block__title">110м<sup>2</sup> <br> Баварская кладка</div>
+                            <div class="carousel__block__subtitle">Места хватит всем! Проектируем и строим.</div>
+                            <div class="carousel__block__btn">
+                                <a href="#" class="btn">узнать цену</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__block">
+                    <div class="carousel__block__inner">
+                        <div class="carousel__block__bg">
+                            <img src="img/banner1.jpg" alt="">
+                        </div>
+                        <div class="carousel__block__content">
+                            <div class="carousel__block__title">110м<sup>2</sup> <br> Баварская кладка</div>
+                            <div class="carousel__block__subtitle">Места хватит всем! Проектируем и строим.</div>
+                            <div class="carousel__block__btn">
+                                <a href="#" class="btn">узнать цену</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__block">
+                    <div class="carousel__block__inner">
+                        <div class="carousel__block__bg">
+                            <img src="img/banner1.jpg" alt="">
+                        </div>
+                        <div class="carousel__block__content">
+                            <div class="carousel__block__title">110м<sup>2</sup> <br> Баварская кладка</div>
+                            <div class="carousel__block__subtitle">Места хватит всем! Проектируем и строим.</div>
+                            <div class="carousel__block__btn">
+                                <a href="#" class="btn">узнать цену</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form__inner">
+                <div class="form__block">
+                    <div class="form__block__left">
+                        <div class="form__block__left__title">Оставьте заявку на консультацию для подбора проекта и расчета стоимости</div>
+                        <div class="form__block__left__list">
+                            <div class="form__block__left__list__item">
+                                <div class="form__block__left__list__icon">
+                                    <span>
+                                        <svg class="svg-form1-dims svg is--form1">
+                                            <use xlink:href="img/svg/sprites.svg#form1"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="form__block__left__list__text"><b>Бесплатный выезд</b> специалиста на участок</div>
+                            </div>
+                            <div class="form__block__left__list__item">
+                                <div class="form__block__left__list__icon">
+                                    <span>
+                                        <svg class="svg-form2-dims svg is--form2">
+                                            <use xlink:href="img/svg/sprites.svg#form2"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="form__block__left__list__text"><b>Бесплатные изменения</b> в любом типовом проекте</div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="form__block__right">
+                        <div class="form__block__right__title">Мы свяжемся с Вами в течение 30 мин.</div>
+                        <div class="form__group is--user">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="form__group is--email">
+                            <input type="email" placeholder="Ваш e-mail">
+                        </div>
+                        <div class="form__group is--phone">
+                            <input type="text" placeholder="Ваш телефон">
+                        </div>
+                        <div class="form__submit">
+                            <input type="submit" value="Получить консультацию">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="index1">
+            <div class="index1__inner">
+                <div class="heading">Почему выбирают нас</div>
+                <div class="index1__wrap">
+                    <div class="index1__wrap__main">
+                        <div class="index1__wrap__left">
+                            <div class="index1__wrap__left__top">
+                                <div class="index1__wrap__left__top__item">
+                                    <div class="index1__wrap__left__top__item__num">8 лет</div>
+                                    <div class="index1__wrap__left__top__item__text">На рынке</div>
+                                </div>
+                                <div class="index1__wrap__left__top__item">
+                                    <div class="index1__wrap__left__top__item__num">> 30</div>
+                                    <div class="index1__wrap__left__top__item__text">Построенных <br> домов</div>
+                                </div>
+                                <div class="index1__wrap__left__top__item">
+                                    <div class="index1__wrap__left__top__item__num">> 200</div>
+                                    <div class="index1__wrap__left__top__item__text">Спроектированных <br> домов</div>
+                                </div>
+                            </div>
+                            <div class="index1__wrap__left__center">
+                                <div class="index1__wrap__left__center__title">Комплексные услуги <br> «Под ключ»</div>
+                                <div class="index1__wrap__left__center__desc">
+                                    Здравствуйте, мы профессиональные строители. Строим
+                                    дома, гаражи, выполняем благоустройство территории.
+                                    Реализуем сложные технические решения:
+                                    Цокольные этажи;
+                                    Фундамент Утепленная Шведская
+                                    Плита (УШП);
+                                    Бассейны, хамамы, СПА-комплексы;
+                                    Большепролетные стропильные системы и межэтажные перекрытия (до 26м, не требуют дополнительных несущих стен)</div>
+                            </div>
+                        </div>
+                        <div class="index1__wrap__right">
+                            <a class="index1__wrap__right__video">
+                                <div class="index1__wrap__right__video__play"></div>
+                                <img src="img/video.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
 
     </footer>
+    <div id="overlay"></div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/slick.min.js"></script>
     <script src="dist/js/main.js"></script>
 </body>
 

@@ -1,0 +1,25 @@
+.btn {
+    display: inline-block;
+    color: #fff;
+    padding: 22px 50px;
+    background: $primary-color;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: .25s all ease;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: 14px;
+    white-space: pre-wrap;
+    text-align: center;
+    &:hover {
+        box-shadow: 0 14px 26px -12px rgba(99,150,69,0.42), 0 4px 23px 0 rgba(0,0,0,0.12), 0 8px 10px -5px rgba(99,150,69,0.2);
+    }
+}
+
+@media (max-width: $resp768) {
+    .btn {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

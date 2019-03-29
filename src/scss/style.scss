@@ -1,6 +1,7 @@
 @import "../../img/svg/sprite.scss";
 @import "hamburgers/hamburgers.scss";
 @import "normalize";
+@import "slick";
 @import "ie";
 @import "vars";
 @import "mixins";
@@ -10,3 +11,7 @@
 @import "navbar";
 @import "form";
 @import "footer";
+@import "buttons";
+@import "blocks/banners";
+@import "blocks/form";
+@import "blocks/index1";

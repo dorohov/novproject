@@ -1,0 +1,4 @@
+@mixin borderedText() {
+    color: #fff;
+    text-shadow: 1px 1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, -1px -1px 0 #000000, 1px 0px 0 #000000, 0px 1px 0 #000000, -1px 0px 0 #000000, 0px -1px 0 #000000, 0px 0px 0px rgba(18,110,164,0);
+}

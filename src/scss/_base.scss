@@ -1,5 +1,16 @@
 body {
     font-family: 'Roboto';
+    &.mobile_menu--open {
+        .mobile__menu {
+            transform: none;
+            opacity: 1;
+        }
+    }
+    &.is--overlay {
+        #overlay {
+            display: block;
+        }
+    }
 }
 
 *,
@@ -26,4 +37,17 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+#overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(#000, .5);
+    transition: .25s all ease;
+    left: 0;
+    top: 0;
+    z-index: 5000;
+    display: none;
+    cursor: pointer;
 }

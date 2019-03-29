@@ -1,0 +1,76 @@
+.index1 {
+    &__inner {
+        @extend .container;
+    }
+    &__wrap {
+        &__main {
+            display: flex;
+        }
+        &__left {
+            width: 100%;
+            &__top {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 40px;
+                &__item {
+                    &__num {
+                        color: $primary-color;
+                        font-family: 'Roboto Slab';
+                        font-size: 36px;
+                        line-height: 36px;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                    }
+                    &__text {
+                        font-size: 18px;
+                        line-height: 19px;
+                        color: $dark;
+                    }
+                }
+            }
+            &__center {
+                &__title {
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: $dark;
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                }
+                &__desc {
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 19px;
+                    color: $dark;
+                }
+            }
+        }
+        &__right {
+            max-width: 545px;
+            min-width: 545px;
+            width: 545px;
+            margin-left: 45px;
+            &__video {
+                display: flex;
+                position: relative;
+                cursor: pointer;
+                &__play {
+                    transition: .25s all ease;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 58px;
+                    height: 58px;
+                    background: url(../../img/play.png);
+                    top: 50%;
+                    margin-top: -27px;
+                }
+                &:hover {
+                    .index1__wrap__right__video__play {
+                        opacity: .9;
+                    }
+                }
+            }
+        }
+    }
+}

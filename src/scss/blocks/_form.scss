@@ -1,0 +1,161 @@
+.form {
+    position: relative;
+    z-index: 200;
+    &__inner {
+        @extend .container;
+    }
+    &__block {
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.2);
+        border: 5px solid $primary-color;
+        transform: translateY(-50%);
+        background: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        &__left {
+            max-width: 53%;
+            width: 100%;
+            padding: 40px 25px 35px 55px;
+            &__title {
+                font-family: 'Roboto Slab';
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 26px;
+                color: $dark;
+                margin-bottom: 20px;
+            }
+            &__list {
+                &__item {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                &__icon {
+                    margin-right: 10px;
+                    span {
+                        display: flex;
+                        width: 65px;
+                        height: 65px;
+                        align-items: center;
+                        justify-content: center;
+                        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+                        border-radius: 100%;
+                        svg {
+                            fill: $primary-color;
+                        }
+                    }
+                }
+                &__text {
+                    color: $dark;
+                    font-size: 16px;
+                }
+            }
+        }
+        &__right {
+            max-width: 47%;
+            width: 100%;
+            padding: 30px 90px;
+            background: #F0F3F8;
+            &__title {
+                text-align: center;
+                font-size: 18px;
+                color: $dark;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__group {
+        margin-bottom: 20px;
+        position: relative;
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]
+         {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: .1px solid #B4B4B4;
+            padding: 7px 0 7px 25px;
+            outline: none;
+            font-size: 14px;
+        }
+        &.is--user {
+            &::after {
+                content: url(../../img/svg/f_user.svg);
+                top: 5px;
+                left: 0;
+                position: absolute;
+            }
+        }
+        &.is--email {
+            &::after {
+                content: url(../../img/svg/f_email.svg);
+                top: 5px;
+                left: 0;
+                position: absolute;
+            }
+        }
+        &.is--phone {
+            &::after {
+                content: url(../../img/svg/f_phone.svg);
+                top: 5px;
+                left: 0;
+                position: absolute;
+            }
+        }
+    }
+    &__submit {
+        padding-top: 10px;
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            outline: none;
+            @extend .btn;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: $resp1200) {
+    .form {
+        padding: 20px 0;
+        &__block {
+            transform: none;
+            &__left,
+            &__right {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .form {
+        &__block {
+            &__left {
+                padding-left: 20px;
+                padding-right: 20px;
+                &__title {
+                    font-size: 18px;
+                    line-height: 20px;
+                    text-align: center;
+                }
+                &__list {
+                    &__icon {
+                        display: none;
+                    }
+                }
+            }
+            &__right {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+        }
+    }
+}
