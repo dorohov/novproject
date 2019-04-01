@@ -3,15 +3,12 @@
     $(function() {
 
         setNavbar()
+        fixeNavbar($(window).scrollTop())
         
         function setNavbar() {
             var navbarHeight = $('.navbar').innerHeight()
             $('main').css('padding-top', navbarHeight)
         }
-
-        $(window).resize(function() {
-            setNavbar()
-        })
 
         function hideMobileNavbar() {
             $('body').removeClass('mobile_menu--open')
@@ -40,6 +37,21 @@
             }
         }
 
+        function fixeNavbar(scroll) {
+            var navbarHeight = $('.navbar').innerHeight();
+
+            if(scroll > navbarHeight) $('.navbar').addClass('is--fixed')
+            else $('.navbar').removeClass('is--fixed')
+        }
+
+        $(window).scroll(function() {
+            fixeNavbar($(this).scrollTop())
+        })
+
+        $(window).resize(function() {
+            setNavbar()
+        })
+
         $('#mobile_menu').on('click', function() {
             toggleMobileNavbar()
         })
@@ -47,6 +59,7 @@
         $('#overlay').on('click', function() {
             hideMobileNavbar()
         })
+        
 
     })
 })(jQuery);

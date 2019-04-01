@@ -1,0 +1,28 @@
+.index3 {
+    padding: 65px 0 100px 0;
+    background: #F0F3F8;
+    &__inner {
+        @extend .container;
+    }
+    &__block {
+        display: flex;
+        &__icon {
+            span {
+                display: flex;
+                box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+                background: #fff;
+                border-radius: 100%;
+                width: 100px;
+                height: 100px;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    fill: $primary-color;
+                }
+            }
+        }
+        &__text {
+            margin-left: 30px;
+        }
+    }
+}

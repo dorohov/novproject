@@ -1,0 +1,194 @@
+.catalog {
+    &__wrap {
+        @extend .container;
+    }
+    &__menu {
+        margin-bottom: 45px;
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                margin: 0 20px;
+                padding: 15px 30px;
+                border: 2px solid transparent;
+                cursor: pointer;
+                font-family: 'Roboto Slab';
+                font-size: 18px;
+                color: $dark;
+                transition: .25s all ease;
+                &.is--active {
+                    border-color: $primary-color;
+                    &:hover {
+                        border-color: $primary-color;
+                    }
+                }
+                &:hover {
+                    border-color: rgba($primary-color, .5);
+                }
+            }
+        }
+    }
+    &__container {
+        display: none;
+        flex-wrap: wrap;
+        margin: -15px;
+        &.is--open {
+            display: flex !important;
+        }
+    }
+    &__right,
+    &__left {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 50%;
+        width: 100%;
+    }
+    &__block {
+        padding: 15px;
+        width: 100%;
+        &__inner {
+            display: block;
+            position: relative;
+            &:hover {
+                .catalog {
+                    &__block {
+                        &__info {
+                            background: rgba(#fff, .8);
+                        }
+                    }
+                }
+            }
+        }
+        &__info {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            background: rgba(215, 215, 215, 0.8);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            transition: .25s all ease;
+            &__name {
+                color: $dark;
+                font-size: 18px;
+                line-height: 21px;
+                font-family: 'Roboto Slab';
+                margin-bottom: 5px;
+            }
+            &__price {
+                font-family: 'Roboto Slab';
+                color: $dark;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                &::after {
+                    content: url(../../img/svg/ruble.svg);
+                    margin-left: 5px;
+                }
+            }
+            &__right {
+                font-size: 18px;
+                line-height: 21px;
+                font-family: 'Roboto Slab';
+                color: $dark;
+            }
+        }
+        &.is100 {
+            max-width: 100%;
+        }
+        &.is50 {
+            max-width: 50%;
+            .catalog {
+                &__block {
+                    &__info {
+                        &__name {
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                        &__price {
+                            font-size: 18px;
+                            line-height: 21px;
+                        }
+                        &__right {
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__btn {
+        text-align: center;
+        padding: 55px 0;
+    }
+}
+
+@media (max-width: $resp1025) {
+    .catalog {
+        &__menu {
+            ul {
+                li {
+                    padding: 10px 20px;
+                    margin: 0 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+        &__block {
+            &.is50 {
+                max-width: 100%;
+            }
+            &__info {
+                &__name {
+                    font-size: 18px !important;
+                    line-height: 21px !important;
+                }
+                &__price {
+                    font-size: 24px !important;
+                    line-height: 28px !important;
+                }
+                &__right {
+                    font-size: 18px !important;
+                    line-height: 21px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .catalog {
+        &__menu {
+            margin-bottom: 35px;
+            ul {
+                flex-wrap: wrap;
+                li {
+                    margin: 0 0 10px 0;
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        &__left,
+        &__right {
+            max-width: 100%;
+        }
+        &__block {
+            &__info {
+                padding: 10px;
+                &__name {
+                    font-size: 16px !important;
+                }
+                &__price {
+                    font-size: 16px !important;
+                }
+                &__right {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+}

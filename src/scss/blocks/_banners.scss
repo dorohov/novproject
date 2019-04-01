@@ -35,7 +35,6 @@
     .slick-dots {
         position: absolute;
         bottom: 27%;
-        max-width: 400px;
         padding: 0 30px;
         left: 0;
         right: 0;
@@ -43,6 +42,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
         li {
             padding: 0 15px;
             button {
