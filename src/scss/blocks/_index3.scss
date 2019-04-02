@@ -6,6 +6,11 @@
     }
     &__block {
         display: flex;
+        align-items: center;
+        margin-bottom: 55px;
+        &:last-child {
+            margin-bottom: 0;
+        }
         &__icon {
             span {
                 display: flex;
@@ -23,6 +28,40 @@
         }
         &__text {
             margin-left: 30px;
+            &__title {
+                font-size: 18px;
+                color: #000;
+                line-height: 21px;
+                margin-bottom: 10px;
+            }
+            &__content {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #000;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .index3 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        &__block {
+            margin-bottom: 30px;
+            &__icon {
+                display: none;
+            }
+            &__text {
+                margin-left: 0;
+                &__title {
+                    font-size: 16px;
+                }
+                &__content {
+                    font-size: 14px;
+                }
+            }
         }
     }
 }

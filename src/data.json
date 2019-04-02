@@ -5,11 +5,9 @@
     "phone_f": "+7 910 262 32 32",
     "phone_f_link": "89102623232",
     "email": "info@novproect.ru",
-    "pages": [
-        {
-            "index": "index.html"
-        }
-    ],
+    "pages": {
+        "index": "index.html"
+    },
     "social": {
         "vk": "#",
         "instagram": "#",

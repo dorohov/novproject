@@ -1,0 +1,84 @@
+.person {
+    margin-bottom: 95px;
+    &__inner {
+        @extend .container;
+        display: flex;
+    }
+    &__left {
+        max-width: 390px;
+        min-width: 390px;
+        width: 390px;
+        margin-right: 90px;
+    }
+    &__right {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        p {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 19px;
+            color: $dark;
+            margin: 0 0 20px 0;
+        }
+        ul {
+            padding-top: 30px;
+            li {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 19px;
+                color: $dark;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &__name {
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 33px;
+        margin: auto 0 40px 0;
+        small {
+            display: block;
+            color: $dark;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: normal;
+        }
+    }
+}
+
+@media (max-width: $resp1200) {
+    .person {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: $resp1025) {
+    .person {
+        &__left {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .person {
+        &__right {
+            p,
+            ul li {
+                font-size: 16px;
+            }
+            ul {
+                padding-top: 0;
+            }
+        }
+        &__name {
+            font-size: 20px;
+            small {
+                font-size: 16px;
+            }
+        }
+    }
+}

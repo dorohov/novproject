@@ -7,11 +7,16 @@
     @@include('items/navbar.html')
     <main>
         @@include('blocks/banner1.html')
-        @@include('blocks/form.html')
+        @@include('blocks/form.html', {"doc": false})
         @@include('blocks/index1.html')
-        @@include('blocks/index2.html')
+        @@include('blocks/index2.html', {"mb": true})
         @@include('blocks/catalog.html')
         @@include('blocks/index3.html')
+        @@include('blocks/index4.html')
+        @@include('blocks/index5.html')
+        @@include('blocks/index6.html')
+        @@include('blocks/index7.html')
+        @@include('blocks/form.html', {"doc": true})
     </main>
     @@include('items/footer.html')
 </body>

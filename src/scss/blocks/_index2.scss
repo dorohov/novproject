@@ -1,5 +1,8 @@
 .index2 {
     margin-bottom: 70px;
+    &.is--mbfalse {
+        margin-bottom: 0;
+    }
     &__inner {
         background: url(../../img/index2_bg.jpg);
         background-size: cover;

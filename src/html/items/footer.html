@@ -1,5 +1,58 @@
 <footer class="footer">
-
+    <div class="footer__inner">
+        <div class="footer__blocks">
+            <div class="footer__info footer__block">
+                <a href="index.html" class="footer__info__logo">
+                    @@include('../items/svg.html', {"name": "logo"})
+                </a>
+                <div class="footer__info__social">
+                    <ul>
+                        <li><a href="@@social.vk">@@include('../items/svg.html', {"name": "vk"})</a></li>
+                        <li><a href="@@social.youtube">@@include('../items/svg.html', {"name": "youtube"})</a></li>
+                        <li><a href="@@social.instagram">@@include('../items/svg.html', {"name": "instagram"})</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info__sitemap"><a href="#">Карта сайта</a></div>
+            </div>
+            <div class="footer__menu footer__block is--nav">
+                <div class="footer__menu__title">Проекты</div>
+                <ul>
+                    <li><a href="#">Кирпичные дома</a></li>
+                    <li><a href="#">Шведские дома</a></li>
+                    <li><a href="#">Финские дома</a></li>
+                    <li><a href="#">Двойной брус Vekwood</a></li>
+                    <li><a href="#">Доступное жилье</a></li>
+                    <li><a href="#">Гаражи</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu footer__block is--nav">
+                <div class="footer__menu__title">Услуги и цены</div>
+                <ul>
+                    <li><a href="#">Строительство фундаментов</a></li>
+                    <li><a href="#">Индивидуальное проектирование</a></li>
+                    <li><a href="#">Покраска стен, потолков, полов</a></li>
+                    <li><a href="#">СПОЗУ для ИЖС в Орле</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu footer__block is--nav">
+                <div class="footer__menu__title">О компании</div>
+                <ul>
+                    <li><a href="#">Схема работы</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Вопрос и ответы</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu footer__block is--last">
+                <div class="footer__menu__title">Контакты</div>
+                <ul>
+                    <li><span>г. Орел Карачевское шоссе 86 офис 313</span></li>
+                    <li><a href="tel:89102623232">+7 910 262 32 32</a></li>
+                    <li><a href="mailto:info@novproect.ru">info@novproect.ru</a></li>
+                    <li><span>Пн-Пт с 09:00 до 18:00</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
 <div id="overlay"></div>
 @@include('scripts.html')

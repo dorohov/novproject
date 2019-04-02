@@ -33,6 +33,12 @@
                 <div class="form__group is--phone">
                     <input type="text" placeholder="Ваш телефон">
                 </div>
+                @@if(doc == true) {
+                    <div class="form__group is--file">
+                        <input type="file" name="file" id="file" placeholder="Ваш телефон">
+                        <label for="file">Прикрепить документ</label>
+                    </div>
+                }
                 <div class="form__submit">
                     <input type="submit" value="Получить консультацию">
                 </div>
