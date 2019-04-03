@@ -98,6 +98,7 @@
         font-size: 48px;
         line-height: 55px;
         margin-bottom: 45px;
+        font-family: 'Roboto Slab';
     }
     &__list {
         &__title {
@@ -183,8 +184,26 @@
 @media (max-width: $resp768) {
     .carousel {
         &__block {
-            &__content {
-                display: none;
+            &__inner {
+                height: 450px;
+            }
+            &__bg {
+                height: 100%;
+                overflow: hidden;
+                img {
+                    width: auto;
+                    height: 100%;
+                    max-width: 10000px;
+                    transform: translateX(-50%);
+                }
+            }
+            &__title {
+                font-size: 30px;
+                line-height: 30px;
+            }
+            &__subtitle {
+                line-height: 22px;
+                font-size: 18px;
             }
         }
     }

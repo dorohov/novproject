@@ -58,6 +58,7 @@
             max-width: 47%;
             width: 100%;
             padding: 30px 90px;
+            padding-top: 40px;
             background: #F0F3F8;
             &__title {
                 text-align: center;
@@ -83,7 +84,7 @@
             padding: 7px 0 7px 25px;
             outline: none;
             font-size: 14px;
-            color: #B4B4B4;
+            color: $dark;
             &::placeholder {
                 color: #B4B4B4;
             }
