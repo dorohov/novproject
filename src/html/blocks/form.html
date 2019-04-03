@@ -25,13 +25,13 @@
             <form class="form__block__right">
                 <div class="form__block__right__title">Мы свяжемся с Вами в течение 30 мин.</div>
                 <div class="form__group is--user">
-                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваше имя" required data-parsley-no-focus>
                 </div>
                 <div class="form__group is--email">
-                    <input type="email" placeholder="Ваш e-mail">
+                    <input type="email" placeholder="Ваш e-mail" required data-parsley-no-focus>
                 </div>
                 <div class="form__group is--phone">
-                    <input type="text" placeholder="Ваш телефон">
+                    <input type="text" placeholder="Ваш телефон" required data-parsley-no-focus>
                 </div>
                 @@if(doc == true) {
                     <div class="form__group is--file">

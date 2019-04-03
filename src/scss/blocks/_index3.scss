@@ -1,6 +1,9 @@
 .index3 {
     padding: 65px 0 100px 0;
     background: #F0F3F8;
+    &.is--form {
+        padding-bottom: 280px;
+    }
     &__inner {
         @extend .container;
     }
@@ -41,6 +44,12 @@
                 color: #000;
             }
         }
+    }
+}
+
+@media (max-width: $resp1200) {
+    .index3 {
+        padding-bottom: 60px !important;
     }
 }
 

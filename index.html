@@ -13,7 +13,7 @@
     <header class="navbar">
         <div class="navbar__inner">
             <div class="navbar__logo">
-                <a href="@@pages.index">
+                <a href="index.html">
                     <img src="img/svg/logo.svg" alt="">
                 </a>
             </div>
@@ -133,13 +133,13 @@
                     <form class="form__block__right">
                         <div class="form__block__right__title">Мы свяжемся с Вами в течение 30 мин.</div>
                         <div class="form__group is--user">
-                            <input type="text" placeholder="Ваше имя">
+                            <input type="text" placeholder="Ваше имя" required data-parsley-no-focus>
                         </div>
                         <div class="form__group is--email">
-                            <input type="email" placeholder="Ваш e-mail">
+                            <input type="email" placeholder="Ваш e-mail" required data-parsley-no-focus>
                         </div>
                         <div class="form__group is--phone">
-                            <input type="text" placeholder="Ваш телефон">
+                            <input type="text" placeholder="Ваш телефон" required data-parsley-no-focus>
                         </div>
 
                         <div class="form__submit">
@@ -546,7 +546,7 @@
                 </div>
             </div>
         </div>
-        <div class="index3">
+        <div class="index3 is--noform">
             <div class="index3__inner">
                 <div class="heading">Современные материалы и технологии</div>
                 <div class="index3__list">
@@ -815,13 +815,13 @@
                     <form class="form__block__right">
                         <div class="form__block__right__title">Мы свяжемся с Вами в течение 30 мин.</div>
                         <div class="form__group is--user">
-                            <input type="text" placeholder="Ваше имя">
+                            <input type="text" placeholder="Ваше имя" required data-parsley-no-focus>
                         </div>
                         <div class="form__group is--email">
-                            <input type="email" placeholder="Ваш e-mail">
+                            <input type="email" placeholder="Ваш e-mail" required data-parsley-no-focus>
                         </div>
                         <div class="form__group is--phone">
-                            <input type="text" placeholder="Ваш телефон">
+                            <input type="text" placeholder="Ваш телефон" required data-parsley-no-focus>
                         </div>
 
                         <div class="form__group is--file">
@@ -903,8 +903,10 @@
     </footer>
     <div id="overlay"></div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
-    <script src="dist/js/slick.min.js"></script>
-    <script src="dist/js/main.js"></script>
+    <script src="dist/js/bundle-min.js"></script>
+    <script>
+        svg4everybody();
+    </script>
 </body>
 
 </html>
