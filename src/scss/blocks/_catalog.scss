@@ -137,6 +137,12 @@
                 }
             }
         }
+        &__container {
+            flex-flow: wrap;
+        }
+        &__left {
+            order: 1;
+        }
         &__block {
             &.is50 {
                 max-width: 100%;

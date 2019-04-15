@@ -33,8 +33,10 @@
         height: 100%;
         margin: 0 auto;
         ul {
-            display: flex;
-            height: 100%;
+            &.def {
+                display: flex;
+                height: 100%;
+            }
             li {
                 height: 100%;
                 a {
@@ -52,6 +54,32 @@
                 &.is--active {
                     a {
                         color: $primary-color;
+                    }
+                }
+                &:hover {
+                    a {
+                        color: $primary-color;
+                    }
+                    .dropdown {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .dropdown {
+            position: absolute;
+            display: none;
+            background: #fff;
+            height: auto !important;
+            box-shadow: 0 8px 10px rgba(0,0,0,.2);
+            li {
+                height: auto !important;
+                a {
+                    padding-top: 10px !important;
+                    padding-bottom: 10px !important;
+                    color: #000 !important;
+                    &:hover {
+                        color: $primary-color !important;
                     }
                 }
             }
@@ -97,10 +125,13 @@
         transform: translateX(-100%);
         opacity: 0;
         transition: .25s all ease;
+        overflow-y: auto;
         &__list {
             padding: 30px 0;
             ul {
                 li {
+                    margin-bottom: 10px;
+                    padding-right: 10px;
                     a {
                         display: block;
                         padding: 10px 20px;
@@ -114,6 +145,24 @@
                     &.is--active {
                         a {
                             color: $primary-color;
+                        }
+                    }
+                    span {
+                        display: flex;
+                        align-items: center;
+                        button {
+                            border: 1px solid $primary-color;
+                            background: transparent;
+                            margin-left: auto;
+                            outline: none;
+                            width: 40px;
+                            height: 40px;
+                            svg {
+                                width: 20px;
+                                height: 20px;
+                                transform: rotate(-90deg);
+                                fill: $primary-color;
+                            }
                         }
                     }
                 }
@@ -137,6 +186,16 @@
                 }
                 &:hover {
                     color: $primary-color;
+                }
+            }
+        }
+        .dropdown {
+            display: none;
+            padding-left: 20px;
+            li {
+                a {
+                    font-size: 14px;
+                    color: #000 !important;
                 }
             }
         }

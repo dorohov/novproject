@@ -59,6 +59,12 @@
         $('#overlay').on('click', function() {
             hideMobileNavbar()
         })
+
+        $('.mdropd').on('click', function() {
+            var id = $(this).data('mdid')
+
+            $('.dropdown[data-mdid="' + id + '"]').slideToggle();
+        })
         
 
     })
