@@ -51,6 +51,10 @@
             min-width: 545px;
             width: 545px;
             margin-left: 45px;
+            iframe {
+                width: 100%;
+                display: none;
+            }
             &__video {
                 display: flex;
                 position: relative;
@@ -181,6 +185,9 @@
                 max-width: 100%;
                 width: 100%;
                 min-width: 0;
+                iframe {
+                    height: auto;
+                }
             }
         }
         &__footer {

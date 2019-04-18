@@ -24,5 +24,10 @@
 
         }
 
+        $('.index1__wrap__right__video').on('click', function() {
+            $('.index1__wrap__right iframe').show();
+            $(this).hide();
+        })
+
     })
 })(jQuery);
